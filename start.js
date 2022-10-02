@@ -14,7 +14,7 @@ const PORT = process.env.PORT;
 // credentials error
 
 if (config.credentials.client_id == null || config.credentials.client_secret == null) {
-    console.error('Missing FORGE_CLIENT_ID or FORGE_CLIENT_SECRET env. variables.');
+    console.error('Missing FORGE_CLIENT_ID or FORGE_CLIENT_SECRET');
     return;
 }
 
