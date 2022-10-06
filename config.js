@@ -14,6 +14,7 @@ module.exports = {
     // set scopes
 
     scopes: {
+        
         // required scopes for the server-side application
 
         internal: ['bucket:create', 'bucket:read', 'data:read', 'data:create', 'data:write'],

@@ -8,7 +8,7 @@ const config = require('./config');
 
 // set port
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 
 // credentials error
@@ -33,4 +33,6 @@ app.use((err, req, res, next) => {
 
 // port echo
 
-app.listen(PORT, () => { console.log(`Server listening on port ${PORT}`); });
+app.listen(PORT, () => {
+    console.log(`Server listening on port ${PORT}`); 
+});
